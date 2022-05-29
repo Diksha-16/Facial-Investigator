@@ -24,12 +24,12 @@ const User = require("./model/user");
 const Missing = require("./model/missing");
 const Criminal = require("./model/criminal");
 
-if(process.env.NODE_ENV==='production'){
-  app.use(express.static('client/build'));
-}
-app.get('*', (request, response) => {
-	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-});
+// if(process.env.NODE_ENV==='production'){
+//   app.use(express.static('client/build'));
+// }
+// app.get('*', (request, response) => {
+// 	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+// });
 
 // Register
 app.post("/api/register", upload.upload1, async (req, res) => {
@@ -59,7 +59,7 @@ app.post("/api/register", upload.upload1, async (req, res) => {
     // Create user in our database
     const user = await User.create({
       user_name: user_name,
-      email: email.toLowerCase(), // sanitize: convert email to lowercase
+      email: email, // sanitize: convert email to lowercase
       password: encryptedPassword,
       url: "",
     });
@@ -317,7 +317,7 @@ app.post("/api/profile", upload.upload1, async (req, res) => {
   } 
 });
 
-const server = app.listen(PORT||5000, () => {
+const server = app.listen(port, () => {
   console.log(`App running on port ...`);
 });
 
