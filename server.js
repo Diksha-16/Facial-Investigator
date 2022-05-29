@@ -315,17 +315,9 @@ app.post("/api/profile", upload.upload1, async (req, res) => {
     console.log(err);
     res.send("err");
   } 
-})
-
-
-
-app.post("/welcome", auth, (req, res) => {
-  console.log(req);
-  res.status(200).send("Welcome 🙌 ");
 });
 
 const server = app.listen(port||5000, () => {
   console.log(`App running on port ...`);
 });
-
 

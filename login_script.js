@@ -10,14 +10,20 @@ const User = require("./model/user.js");
 
 //Load face-api.js models
 Promise.all([
-  faceapi.nets.faceRecognitionNet.loadFromDisk(process.cwd() + '/faceRecognitionModels'),
-    faceapi.nets.faceLandmark68Net.loadFromDisk(process.cwd() + '/faceRecognitionModels'),
-    faceapi.nets.tinyYolov2.loadFromDisk(process.cwd() + '/faceRecognitionModels'),
+  faceapi.nets.faceRecognitionNet.loadFromDisk(
+    process.cwd() + "/faceRecognitionModels"
+  ),
+  faceapi.nets.faceLandmark68Net.loadFromDisk(
+    process.cwd() + "/faceRecognitionModels"
+  ),
+  faceapi.nets.tinyYolov2.loadFromDisk(
+    process.cwd() + "/faceRecognitionModels"
+  ),
 ]).then(console.log("models loaded"));
 
-module.exports.recognise_login = async (imageUpload, id, login,email) => {
+module.exports.recognise_login = async (imageUpload, id, login, email) => {
   var verified = false;
-  
+
   start();
   async function start() {
     var LabeledFaceDescriptors = await add_descriptors();
@@ -34,8 +40,7 @@ module.exports.recognise_login = async (imageUpload, id, login,email) => {
         process.cwd() + `/savedImages/tmp_files/${tmpfile}.jpeg`,
         image,
         "buffer",
-        function (err) {
-        }
+        function (err) {}
       ),
     ]).then(detect_face);
 
@@ -49,7 +54,7 @@ module.exports.recognise_login = async (imageUpload, id, login,email) => {
         .detectAllFaces(img, new faceapi.TinyYolov2Options())
         .withFaceLandmarks()
         .withFaceDescriptors();
-      //Match the current image face with other faces 
+      //Match the current image face with other faces
       var results = detections.map((d) =>
         faceMatcher.findBestMatch(d.descriptor)
       );
@@ -82,10 +87,8 @@ module.exports.recognise_login = async (imageUpload, id, login,email) => {
       labels.map(async (label) => {
         var descriptions = [];
         const user = await User.findOne({ email });
-        const url=user.url
-        var img = await canvas.loadImage(
-          url
-        );
+        const url = user.url;
+        var img = await canvas.loadImage(url);
         var detections = await faceapi
           .detectSingleFace(img, new faceapi.TinyYolov2Options())
           .withFaceLandmarks()
