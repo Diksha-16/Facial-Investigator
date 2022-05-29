@@ -64,7 +64,7 @@ Facial Investigator is an investigation app that can be used by the officials of
 ### Setup
 1. Run `npm install` in the root directory to install all necessary dependencies.
 2. Run `cd client` and again, run `npm install` to install dependencies for client side.
-3. Move `C:\facial-investigator\node_modules\@tensorflow\tfjs-node\deps\lib\tensorflow.dll` to `C:\facial-investigator\node_modules\@tensorflow\tfjs-node\lib\napi-v5\`
+3. Move `C:\facial-recog\node_modules\@tensorflow\tfjs-node\deps\lib\tensorflow.dll` to `C:\facial-recog\node_modules\@tensorflow\tfjs-node\lib\napi-v5\`
 ## Running on localhost
 1. In the root directory, run `nodemon .\server.js` to start the backend server.
 2. Run `cd client` and then run `npm start` to start the react app server.
