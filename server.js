@@ -24,12 +24,12 @@ const User = require("./model/user");
 const Missing = require("./model/missing");
 const Criminal = require("./model/criminal");
 
-// if(process.env.NODE_ENV==='production'){
-//   app.use(express.static('client/build'));
-// }
-// app.get('*', (request, response) => {
-// 	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-// });
+if(process.env.NODE_ENV==='production'){
+  app.use(express.static('client/build'));
+}
+app.get('*', (request, response) => {
+	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
 
 // Register
 app.post("/api/register", upload.upload1, async (req, res) => {
