@@ -59,7 +59,7 @@ app.post("/api/register", upload.upload1, async (req, res) => {
     // Create user in our database
     const user = await User.create({
       user_name: user_name,
-      email: email, // sanitize: convert email to lowercase
+      email: email,
       password: encryptedPassword,
       url: "",
     });
