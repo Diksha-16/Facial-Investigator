@@ -34,7 +34,7 @@ Facial Investigator is an investigation app that can be used by the officials of
   - Option to edit the image of the user.
 - **Sessions created for login**
   - The user who has logged in is remembered by creating sessions.
-  - A non logged in user cannot access the authorized pages by typing their url.
+- **A non logged in user cannot access the authorized pages by typing their url.**
 - **Passwords are stored securely in hashed form using bcrypt**
 - **Responsive Website,can be easily used in mobile devices.**
 
@@ -64,7 +64,7 @@ Facial Investigator is an investigation app that can be used by the officials of
 ### Setup
 1. Run `npm install` in the root directory to install all necessary dependencies.
 2. Run `cd client` and again, run `npm install` to install dependencies for client side.
-3. Move `C:\facial-recog\node_modules\@tensorflow\tfjs-node\deps\lib\tensorflow.dll` to `C:\facial-recog\node_modules\@tensorflow\tfjs-node\lib\napi-v5\`
+3. Move `C:\facial-investigator\node_modules\@tensorflow\tfjs-node\deps\lib\tensorflow.dll` to `C:\facial-investigator\node_modules\@tensorflow\tfjs-node\lib\napi-v5\`
 ## Running on localhost
 1. In the root directory, run `nodemon .\server.js` to start the backend server.
 2. Run `cd client` and then run `npm start` to start the react app server.
