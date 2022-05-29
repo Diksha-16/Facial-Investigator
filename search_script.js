@@ -11,9 +11,9 @@ console.log(tf.version)
 
 //Load face-api.js models
 Promise.all([
-    faceapi.nets.faceRecognitionNet.loadFromDisk(process.cwd() + '/models'),
-    faceapi.nets.faceLandmark68Net.loadFromDisk(process.cwd() + '/models'),
-    faceapi.nets.tinyYolov2.loadFromDisk(process.cwd() + '/models'),
+    faceapi.nets.faceRecognitionNet.loadFromDisk(process.cwd() + '/faceRecognitionModels'),
+    faceapi.nets.faceLandmark68Net.loadFromDisk(process.cwd() + '/faceRecognitionModels'),
+    faceapi.nets.tinyYolov2.loadFromDisk(process.cwd() + '/faceRecognitionModels'),
 ]).then(console.log("models loaded"))
 
 module.exports.search = async (search1, imageUpload, ids, type) => {

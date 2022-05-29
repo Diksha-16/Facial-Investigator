@@ -86,7 +86,9 @@ function SignUp({ setToken }) {
           console.log(err);
           if (err.response.status === 401) {
             setMsg("Face not found in image,try Again!");
-          } else {
+          } else if(err.response.status === 400){
+            setMsg("All Inputs are Required!");
+          }else{
             setSubmitted(true);
             setValid(true);
           }

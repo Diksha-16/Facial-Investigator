@@ -34,6 +34,7 @@ function Login({ setToken }) {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [msg, setMsg] = useState("");
 
   const [valid, setValid] = useState(false);
   const handleName = (event) => {
@@ -78,8 +79,13 @@ function Login({ setToken }) {
         })
         .catch((err) => {
           console.log(err);
-          setSubmitted(true);
-          setValid(true);
+          if (err.response.status === 400) {
+            setMsg("All Inputs are Required!");
+          } else{
+            setSubmitted(true);
+            setValid(true);
+          }
+          
         });
     }
   };
@@ -115,6 +121,7 @@ function Login({ setToken }) {
             Log In
           </Typography>
         </Grid>
+        <div>{msg}</div>
         {submitted && valid ? (
           <div>Incorrect Credentials,Please Check Details</div>
         ) : null}

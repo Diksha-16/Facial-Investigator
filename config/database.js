@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 
 exports.connect = () => {
   // Connecting to the database
+  /* Enter your own credentials*/
   mongoose
     .connect("mongodb+srv://recognise:recognise@cluster0.szu2i.mongodb.net/FaceDB", {
       useNewUrlParser: true,

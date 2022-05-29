@@ -1,9 +1,13 @@
 # Facial Investigator
 
-Facial Investigator can be used by the officials of an investigation agency.Criminal records of a suspected person can be fetched if existing by recognizing the facial descriptors.Information and photograph of new wanted persons can be added to database. Details of a rescued missing person can be fetched if found in records by analyzing facial features.More cases of missing people can be registered.Only authorized users can access the app through their face ID.Users can also edit their profile images.
+Facial Investigator is an investigation app that can be used by the officials of an investigation agency.Criminal records of a suspected person can be fetched if existing by recognizing the facial descriptors.Information and photograph of new wanted persons can be added to database. Details of a rescued missing person can be fetched if found in records by analyzing facial features.More cases of missing people can be registered.Only authorized users can access the app through their face ID.Users can also edit their profile images.
 
 # Preview
 ![tech33nology ppt template - 10 slides - creative (1) pptx](https://user-images.githubusercontent.com/92640652/170768345-70c77fdc-4a26-4d54-a6a8-523c1d1ec3d2.png)
+
+![tech33nology ppt template - 10 slides - creative (1) pptx](https://user-images.githubusercontent.com/92640652/170854655-b2442e77-74fc-4aae-9af5-3c463d555ec9.png)
+
+![tech33nology ppt template - 10 slides - creative (1) pptx](https://user-images.githubusercontent.com/92640652/170854805-43c881d6-1918-4709-ba16-2b13e5f8afb9.png)
 
 
 ## Table of content
@@ -30,6 +34,7 @@ Facial Investigator can be used by the officials of an investigation agency.Crim
   - Option to edit the image of the user.
 - **Sessions created for login**
   - The user who has logged in is remembered by creating sessions.
+  - A non logged in user cannot access the authorized pages by typing their url.
 - **Passwords are stored securely in hashed form using bcrypt**
 - **Responsive Website,can be easily used in mobile devices.**
 

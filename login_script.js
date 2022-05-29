@@ -10,9 +10,9 @@ const User = require("./model/user.js");
 
 //Load face-api.js models
 Promise.all([
-  faceapi.nets.faceRecognitionNet.loadFromDisk(process.cwd() + "/models"),
-  faceapi.nets.faceLandmark68Net.loadFromDisk(process.cwd() + "/models"),
-  faceapi.nets.tinyYolov2.loadFromDisk(process.cwd() + "/models"),
+  faceapi.nets.faceRecognitionNet.loadFromDisk(process.cwd() + '/faceRecognitionModels'),
+    faceapi.nets.faceLandmark68Net.loadFromDisk(process.cwd() + '/faceRecognitionModels'),
+    faceapi.nets.tinyYolov2.loadFromDisk(process.cwd() + '/faceRecognitionModels'),
 ]).then(console.log("models loaded"));
 
 module.exports.recognise_login = async (imageUpload, id, login,email) => {
