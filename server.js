@@ -317,7 +317,7 @@ app.post("/api/profile", upload.upload1, async (req, res) => {
   } 
 });
 
-const server = app.listen(port, () => {
+const server = app.listen(PORT, () => {
   console.log(`App running on port ...`);
 });
 
