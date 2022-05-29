@@ -44,7 +44,7 @@ Facial Investigator is an investigation app that can be used by the officials of
 
 
 ## TechStack
-![technology ppt template - 10 slides - creative (1) pptx](https://user-images.githubusercontent.com/92640652/170002150-3d0c4fa0-4517-4681-8586-06f9bdb31595.png)
+![technology ppt template - 10 slides - creative (1) pptx](https://user-images.githubusercontent.com/92640652/170867870-3d474bd6-4387-4e20-bc68-7d9b3279df24.png)
 
 1. Front End/Client Side
    - ReactJS
