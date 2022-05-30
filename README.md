@@ -18,28 +18,28 @@ https://facial-investigator.herokuapp.com/
   - [TechStack](#techstack)
   - [Development](#development)
 ## Features
-- *Fetches information about suspected criminal*
+- **Fetches information about suspected criminal**
   - Captures a snap of the suspected person's face and checks if any criminal record of the person exists and displays all the details. 
-- *Add new criminal records*
+- **Add new criminal records**
   - Details like name,crime,regional police,since when is the person wanted and photograph of new criminal people can be entered in the database.
   - Informs the user if no face was detected and to add a clear image
-- *Displays the details of a rescued person*
+- **Displays the details of a rescued person**
   - Takes a pic of the reported person to be rescued and checks if any information of the person exists and displays all the details.
-- *Upload new data to database of missing people*
+- **Upload new data to database of missing people**
   - Enter details like name,contact,address of new people who went missing in the database.
   - Informs if the uploaded image is not in valid format and to upload again.
-- *Authentication using face id and password*
+- **Authentication using face id and password**
   - New users must sign up using email,password and face ID.
   - Informs if an image without any face was used for SignUp.
   - Existing users may log in with email and faceID.
-- *User can view/update profile*
+- **User can view/update profile**
   - Details of the logged in user are displayed.
   - Option to edit the image of the user.
-- *Sessions created for login*
+- **Sessions created for login**
   - The user who has logged in is remembered by creating sessions.
-- *A non logged in user cannot access the authorized pages by typing their url.*
-- *Passwords are stored securely in hashed form using bcrypt*
-- *Responsive Website,can be easily used in mobile devices.*
+- **A non logged in user cannot access the authorized pages by typing their url.**
+- **Passwords are stored securely in hashed form using bcrypt**
+- **Responsive Website,can be easily used in mobile devices.**
 
 ![technology ppt template - 10 slides - creative (1) pptx](https://user-images.githubusercontent.com/92640652/170773666-2af3d9c2-89bb-4201-9250-b88db7039d3b.png)
 
@@ -66,9 +66,9 @@ https://facial-investigator.herokuapp.com/
 ## Development
 ### Setup
 1. Run `npm install` in the root directory to install all necessary dependencies.
-2. Run `cd client` and again, run `npm install` to install dependencies for client side.
+2. Run `cd client` and again, run `npm install`(if react version is 16) else run `npm install --force` to install dependencies for client side.
 3. Move `C:\Facial-Investigator\node_modules\@tensorflow\tfjs-node\deps\lib\tensorflow.dll` to `C:\Facial-Investigator\node_modules\@tensorflow\tfjs-node\lib\napi-v5\`
-4. Try to delete the node_modules and `npm i` in the root directory again if tensoflow.js is giving error.
+4. Move `C:\Facial-Investigator\bug-fixing\tfjs_binding.node` to `C:\Facial-Investigator\node_modules\@tensorflow\tfjs-node\lib\napi-v5\`
 ## Running on localhost
-1. In the root directory, run `nodemon .\server.js` to start the backend server.
+1. In the root directory, run `node .\server.js` to start the backend server.
 2. Run `cd client` and then run `npm start` to start the react app server.
