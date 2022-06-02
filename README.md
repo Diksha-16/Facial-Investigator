@@ -66,9 +66,9 @@ https://facial-investigator.herokuapp.com/
 ## Development
 ### Setup
 1. Run `npm install` in the root directory to install all necessary dependencies.
-2. Run `cd client` and again, run `npm install`(if react version is 16) else run `npm install --force` to install dependencies for client side.
-3. Move `C:\Facial-Investigator\node_modules\@tensorflow\tfjs-node\deps\lib\tensorflow.dll` to `C:\Facial-Investigator\node_modules\@tensorflow\tfjs-node\lib\napi-v5\`
-4. Move `C:\Facial-Investigator\bug-fixing\tfjs_binding.node` to `C:\Facial-Investigator\node_modules\@tensorflow\tfjs-node\lib\napi-v5\`
+2. Run `cd client` and again, run `npm install`(if react version is 16) else run `npm install --force` to install dependencies for client side.(If frontend is not loaded again run `npm install --force`.
+3. Move `C:\Facial-Investigator\node_modules\@tensorflow\tfjs-node\deps\lib\tensorflow.dll` to `C:\Facial-Investigator\node_modules\@tensorflow\tfjs-node\lib\napi-v5\` if file is not present already.
+4. Move `C:\Facial-Investigator\bug-fixing\tfjs_binding.node` to `C:\Facial-Investigator\node_modules\@tensorflow\tfjs-node\lib\napi-v5\` if file is not present already.
 ## Running on localhost
 1. In the root directory, run `node .\server.js` to start the backend server.
 2. Run `cd client` and then run `npm start` to start the react app server.
