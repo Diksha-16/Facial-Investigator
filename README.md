@@ -71,4 +71,4 @@ https://facial-investigator.herokuapp.com/
 4. Move `C:\Facial-Investigator\bug-fixing\tfjs_binding.node` to `C:\Facial-Investigator\node_modules\@tensorflow\tfjs-node\lib\napi-v5\` if file is not present already.
 ## Running on localhost
 1. In the root directory, run `node .\server.js` to start the backend server.
-2. Run `cd client` and then run `npm start` to start the react app server.
+2. In another terminal, run `cd client` and then run `npm start` to start the react app server.
