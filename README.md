@@ -8,14 +8,6 @@ https://facial-investigator.herokuapp.com/
 # Video Demo-
 https://youtu.be/hoBmIFQVzlo
 
-# Preview
-![tech33nology ppt template - 10 slides - creative (1) pptx](https://user-images.githubusercontent.com/92640652/170768345-70c77fdc-4a26-4d54-a6a8-523c1d1ec3d2.png)
-
-![tech33nology ppt template - 10 slides - creative (1) pptx](https://user-images.githubusercontent.com/92640652/170854655-b2442e77-74fc-4aae-9af5-3c463d555ec9.png)
-
-![tech33nology ppt template - 10 slides - creative (1) pptx](https://user-images.githubusercontent.com/92640652/170854805-43c881d6-1918-4709-ba16-2b13e5f8afb9.png)
-
-
 ## Table of content
   - [Features](#features)
   - [TechStack](#techstack)
