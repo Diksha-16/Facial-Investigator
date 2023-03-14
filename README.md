@@ -3,7 +3,7 @@
 Facial Investigator is an investigation app that can be used by the officials of an investigation agency.Criminal records of a suspected person can be fetched if existing by recognizing the facial descriptors.Information and photograph of new wanted persons can be added to database. Details of a rescued missing person can be fetched if found in records by analyzing facial features.More cases of missing people can be registered.Only authorized users can access the app through their face ID.Users can also edit their profile images.
 
 # Hosted At-
-https://facial-investigator.herokuapp.com/
+https://facial-investigator-front.vercel.app/
 
 # Video Demo-
 https://youtu.be/hoBmIFQVzlo
